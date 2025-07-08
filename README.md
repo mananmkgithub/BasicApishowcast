@@ -4,7 +4,7 @@ This is a responsive portfolio webpage showcasing a series of backend API projec
 
 ## 🧑‍💻 Live Demo
 
-🌐 **Live Website:** [Visit Project Portfolio](https://your-deployed-url.com)  
+🌐 **Live Website:** [Visit Project Portfolio](https://mananmkgithub.github.io/BasicApishowcast/)  
 📁 **GitHub Repository:** [Mananmkgithub Repos](https://github.com/mananmkgithub?tab=repositories)
 
 ---
