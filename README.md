@@ -11,14 +11,14 @@ This is a responsive portfolio webpage showcasing a series of backend API projec
 
 ## 📂 Projects Included
 
-| Project Name | Tech Stack | Description |
-|--------------|------------|-------------|-----------|
-| **Notes API with JWT Auth** | Node.js, Express, MongoDB, Mongoose, JWT | Secure user login with token-based authentication and CRUD for notes. |
-| **Hotel Management API** | Node.js, Express, MongoDB | Full CRUD operations with filtering and search. | 
-| **URL Shortener API** | Node.js, Express, MongoDB, EJS | Shorten long URLs, track clicks, and redirect users. | |
-| **Employee CRUD App** | Node.js, Express, MongoDB, EJS, Bootstrap | Create, Read, Update, Delete employee records. |
-| **API Testing** | Postman | Test all APIs with headers, tokens, and body. | - |
-| **Render Hosting** | Render | All apps deployed for free and publicly accessible. | - |
+| Project Name               | Tech Stack                                    | Description                                                                                  | Live Link |
+|---------------------------|-----------------------------------------------|----------------------------------------------------------------------------------------------|-----------|
+| **Notes API with JWT Auth** | Node.js, Express, MongoDB, Mongoose, JWT       | Secure user login with token-based authentication and CRUD for notes.                        | [Live](https://notesapi-jwt.onrender.com/) |
+| **Hotel Management API**   | Node.js, Express, MongoDB                     | Full CRUD operations with filtering and search.                                              | [Live](https://node-hotels-et3g.onrender.com/) |
+| **URL Shortener API**      | Node.js, Express, MongoDB, EJS                | Shorten long URLs, track clicks, and redirect users.                                         | [Live](https://url-shortner-jhwb.onrender.com/) |
+| **Employee CRUD App**      | Node.js, Express, MongoDB, EJS, Bootstrap     | Create, Read, Update, Delete employee records.                                               | [Live](https://simpal-crus-app.onrender.com) |
+| **API Testing**            | Postman, REST APIs, JSON                      | Test all APIs using headers, tokens, and request bodies through Postman.                    | -         |
+| **Render Hosting**         | Render, Node.js                               | All APIs are deployed publicly for free using the Render platform.                           | -         |
 
 ---
 
