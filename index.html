@@ -4,22 +4,14 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>API Projects Showcase</title>
+    <title>API Practice Projects (Created By Manan)</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
         :root {
-            --bg-start: #0f2027;
-            --bg-end: #203a43;
-            --bg-deep: #2c5364;
             --accent: #00cfe8;
             --hover: #ff9e57;
-            --text-main: #f0f9ff;
-            --text-subtle: #a8c3d3;
-            --card-bg: rgba(255, 255, 255, 0.08);
-            --card-border: rgba(255, 255, 255, 0.1);
-            --card-glow: rgba(0, 207, 232, 0.3);
+            --text-main: #ffffff;
+            --text-subtle: #d0e5f5;
         }
 
         * {
@@ -30,36 +22,36 @@
 
         body {
             font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, var(--bg-start), var(--bg-end), var(--bg-deep));
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
             color: var(--text-main);
             padding: 2rem;
             display: flex;
             flex-direction: column;
             align-items: center;
-            min-height: 100vh;
-            transition: all 0.3s ease;
         }
 
         h1 {
-            color: var(--accent);
-            font-size: 3rem;
+            font-size: 2.8rem;
             margin-bottom: 2rem;
+            color: var(--accent);
+            text-shadow: 0 2px 6px rgba(0, 207, 232, 0.4);
             text-align: center;
-            letter-spacing: 1px;
-            text-shadow: 0 2px 5px rgba(0, 207, 232, 0.2);
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            width: 100%;
+            max-width: 1200px;
         }
 
         .card {
-            background: var(--card-bg);
-            border: 1px solid var(--card-border);
-            backdrop-filter: blur(16px);
             border-radius: 16px;
-            padding: 2rem;
-            margin: 1.2rem;
-            width: 100%;
-            max-width: 680px;
-            box-shadow: 0 8px 30px var(--card-glow);
-            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            padding: 1.5rem;
+            color: var(--text-main);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .card:hover {
@@ -67,58 +59,100 @@
             box-shadow: 0 12px 40px rgba(255, 158, 87, 0.3);
         }
 
-        h2 {
-            color: #d1faff;
-            font-size: 1.75rem;
+        .card h2 {
+            font-size: 1.6rem;
             margin-bottom: 0.6rem;
         }
 
-        p {
-            color: var(--text-subtle);
+        .card p {
             font-size: 1rem;
-            margin-bottom: 1rem;
             line-height: 1.6;
+            color: var(--text-subtle);
         }
 
-        a {
-            display: inline-block;
-            margin: 0.3rem 0;
-            text-decoration: none;
-            color: var(--accent);
+        .tech-stack {
+            margin-top: 0.8rem;
+            font-size: 0.9rem;
             font-weight: 600;
-            transition: all 0.3s ease;
+            color: #ffe1bb;
         }
 
-        a:hover {
+        .card a {
+            display: inline-block;
+            margin-top: 0.6rem;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s ease;
+        }
+
+        .card a:hover {
             color: var(--hover);
             text-decoration: underline;
         }
 
+        /* Solid color backgrounds for each card */
+        .card:nth-child(1) {
+            background-color: #005f73;
+        }
+
+        /* Notes API */
+        .card:nth-child(2) {
+            background-color: #1e6091;
+        }
+
+        /* Hotel - changed */
+        .card:nth-child(3) {
+            background-color: #6a4c93;
+        }
+
+        /* URL Shortener */
+        .card:nth-child(4) {
+            background-color: #5f0f40;
+        }
+
+        /* Employee - changed */
+        .card:nth-child(5) {
+            background-color: #264653;
+        }
+
+        /* Postman/API Testing */
+        .card:nth-child(6) {
+            background-color: #3c096c;
+        }
+
+        /* Hosted on Render */
+
+
         .readme {
+            margin-top: 3rem;
+            max-width: 800px;
             background-color: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.08);
             border-radius: 12px;
-            padding: 1.6rem;
-            margin-top: 2.5rem;
+            padding: 2rem;
             color: #d8f8ff;
             font-size: 1rem;
             line-height: 1.8;
-            width: 100%;
-            max-width: 760px;
+        }
+
+        .readme a {
+            font-size: large;
+            color: white;
         }
 
         footer {
             margin-top: 3rem;
             text-align: center;
-            font-size: 1rem;
             color: #9cd6ef;
-            padding-bottom: 2rem;
+            font-size: 1.4rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
         }
 
         .social-icons img {
-            width: 38px;
-            height: 38px;
-            margin: 0 10px;
+            width: 40px;
+            height: 40px;
+            margin: 0 12px;
             vertical-align: middle;
             border-radius: 50%;
             background-color: #ffffff1a;
@@ -133,76 +167,87 @@
 
         @media (max-width: 600px) {
             h1 {
-                font-size: 2.4rem;
+                font-size: 2.2rem;
             }
 
-            .card {
-                padding: 1.3rem;
+            footer {
+                font-size: 1.2rem;
             }
 
-            h2 {
-                font-size: 1.4rem;
-            }
-
-            .social-icons img {
-                width: 32px;
-                height: 32px;
+            .readme {
+                padding: 1.2rem;
             }
         }
     </style>
 </head>
 
 <body>
+    <h1>🚀 API Practice Projects (Backend)</h1>
 
-    <h1>🚀 API Practice Projects</h1>
+    <div class="projects">
+        <div class="card">
+            <h2>📝 Notes API with JWT Auth</h2>
+            <p>Secure note management system with user login and token-based access.</p>
+            <div class="tech-stack">Node.js, Express, MongoDB, Mongoose, JWT, REST API</div>
+            <a href="https://github.com/mananmkgithub/notesapi" target="_blank">🔗 GitHub</a>
+            <a href="https://notesapi-jwt.onrender.com/" target="_blank">🌐 Live</a>
+        </div>
 
-    <div class="card">
-        <h2>📝 Notes API with JWT Auth</h2>
-        <p>Secure note management system with user login and token-based access.</p>
-        <a href="https://github.com/mananmkgithub/notesapi" target="_blank">🔗 GitHub Repository</a>
-        <a href="https://notesapi-jwt.onrender.com/" target="_blank">🌐 Live on Render</a>
+        <div class="card">
+            <h2>🏨 Hotel Management API</h2>
+            <p>Hotel CRUD API with filter and search features using Express & MongoDB.</p>
+            <div class="tech-stack">Node.js, Express, MongoDB, REST API</div>
+            <a href="https://github.com/mananmkgithub/node_hotels" target="_blank">🔗 GitHub</a>
+            <a href="https://node-hotels-et3g.onrender.com/" target="_blank">🌐 Live</a>
+        </div>
+
+        <div class="card">
+            <h2>🔗 URL Shortener API</h2>
+            <p>Create and manage short URLs with click tracking. Built with Node.js & MongoDB.</p>
+            <div class="tech-stack">Node.js, Express, MongoDB, API</div>
+            <a href="https://github.com/mananmkgithub/url-shortner" target="_blank">🔗 GitHub</a>
+            <a href="https://url-shortner-jhwb.onrender.com/" target="_blank">🌐 Live</a>
+        </div>
+
+        <div class="card">
+            <h2>👨‍💼 Employee CRUD App</h2>
+            <p>Manage employee records with full Create, Read, Update, Delete operations.</p>
+            <div class="tech-stack">Node.js, Express, MongoDB, EJS, Bootstrap</div>
+            <a href="https://github.com/mananmkgithub/emp-simpal-crud-app-" target="_blank">🔗 GitHub</a>
+            <a href="https://simpal-crus-app.onrender.com" target="_blank">🌐 Live</a>
+        </div>
+
+        <div class="card">
+            <h2>🧪 API Testing</h2>
+            <p>Use <strong>Postman</strong> to test all APIs with headers, auth tokens & request bodies.</p>
+            <div class="tech-stack">Postman, REST APIs, JSON</div>
+        </div>
+
+        <div class="card">
+            <h2>🌍 Hosted on Render</h2>
+            <p>All APIs are deployed using free Render hosting and are publicly accessible.</p>
+        </div>
     </div>
 
-    <div class="card">
-        <h2>🏨 Hotel Management API</h2>
-        <p>Hotel CRUD API with filter and search features using Express & MongoDB.</p>
-        <a href="https://github.com/mananmkgithub/node_hotels" target="_blank">🔗 GitHub Repository</a>
-        <a href="https://node-hotels-et3g.onrender.com/" target="_blank">🌐 Live on Render</a>
-    </div>
-    <!-- 🔗 URL Shortener API -->
-    <div class="card">
-        <h2>🔗 URL Shortener API</h2>
-        <p>Create and manage short URLs with click tracking. Built with Node.js & MongoDB.</p>
-        <a href="https://github.com/mananmkgithub/url-shortner" target="_blank">🔗 GitHub Repository</a>
-        <a href="https://url-shortner-jhwb.onrender.com/" target="_blank">🌐 Live on Render</a>
-    </div>
-    <div class="card">
-        <h2>🧪 API Testing</h2>
-        <p>Use <strong>Postman</strong> to test all APIs and explore authentication, filtering, and CRUD features.</p>
-    </div>
-    <div class="card">
-        <h2>🌍 Hosted on Render</h2>
-        <p> APIs are deployed with <strong>free Render hosting</strong> and accessible publicly.</p>
-    </div>
-
-    <div class="readme">
+    <div class="readme card">
         <h2>📄 GitHub README Instructions</h2>
+        <a href="https://github.com/mananmkgithub?tab=repositories" target="_blank">🔗 My GitHub Repositories</a>
         <p><strong>Step 1:</strong> Clone the repo</p>
-        <code>git clone https://github.com/mananmkgithub?tab=repositories</code>
+        <code>git clone https://github.com/your-repo</code>
         <p><strong>Step 2:</strong> Install dependencies</p>
         <code>npm install</code>
         <p><strong>Step 3:</strong> Add environment variables</p>
         <code>
       PORT=5000<br />
       MONGODB_URI=your_mongo_uri<br />
-      JWT_SECRET=your_jwt_key(you need jwt)
+      JWT_SECRET=your_jwt_key
     </code>
         <p><strong>Step 4:</strong> Run the app</p>
         <code>npm start</code>
     </div>
 
     <footer>
-        <p>Created by <strong>Manan </strong> </p>
+        <p>👨‍💻 Created by <strong style="color:#ffffff; font-size: 1.6rem;">Manan</strong></p>
         <div class="social-icons" style="margin-top: 1rem;">
             <a href="https://github.com/mananmkgithub" target="_blank">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
@@ -214,4 +259,5 @@
         </div>
     </footer>
 </body>
+
 </html>
