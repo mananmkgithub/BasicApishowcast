@@ -2,199 +2,217 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>API Projects Showcase</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-  <style>
-    :root {
-      --bg-dark: #0f2027;
-      --bg-medium: #203a43;
-      --bg-light: #2c5364;
-      --accent: #00e5ff;
-      --hover: #ffb074;
-      --text-main: #e0f7fa;
-      --card-bg: rgba(255, 255, 255, 0.07);
-      --card-border: rgba(255, 255, 255, 0.12);
-    }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Projects Showcase</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+        :root {
+            --bg-start: #0f2027;
+            --bg-end: #203a43;
+            --bg-deep: #2c5364;
+            --accent: #00cfe8;
+            --hover: #ff9e57;
+            --text-main: #f0f9ff;
+            --text-subtle: #a8c3d3;
+            --card-bg: rgba(255, 255, 255, 0.08);
+            --card-border: rgba(255, 255, 255, 0.1);
+            --card-glow: rgba(0, 207, 232, 0.3);
+        }
 
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, var(--bg-dark), var(--bg-medium), var(--bg-light));
-      color: var(--text-main);
-      padding: 2rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 100vh;
-    }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    h1 {
-      color: var(--accent);
-      font-size: 2.8rem;
-      margin-bottom: 2rem;
-      text-align: center;
-    }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, var(--bg-start), var(--bg-end), var(--bg-deep));
+            color: var(--text-main);
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            transition: all 0.3s ease;
+        }
 
-    .card {
-      background: var(--card-bg);
-      border: 1px solid var(--card-border);
-      backdrop-filter: blur(14px);
-      border-radius: 16px;
-      padding: 1.8rem;
-      margin: 1rem;
-      width: 100%;
-      max-width: 650px;
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
-      transition: transform 0.3s ease;
-    }
+        h1 {
+            color: var(--accent);
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            letter-spacing: 1px;
+            text-shadow: 0 2px 5px rgba(0, 207, 232, 0.2);
+        }
 
-    .card:hover {
-      transform: translateY(-6px);
-    }
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            backdrop-filter: blur(16px);
+            border-radius: 16px;
+            padding: 2rem;
+            margin: 1.2rem;
+            width: 100%;
+            max-width: 680px;
+            box-shadow: 0 8px 30px var(--card-glow);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
 
-    h2 {
-      color: #a3e4ff;
-      font-size: 1.6rem;
-      margin-bottom: 0.5rem;
-    }
+        .card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 12px 40px rgba(255, 158, 87, 0.3);
+        }
 
-    p {
-      margin-bottom: 1rem;
-      color: var(--text-main);
-    }
+        h2 {
+            color: #d1faff;
+            font-size: 1.75rem;
+            margin-bottom: 0.6rem;
+        }
 
-    a {
-      display: inline-block;
-      margin: 0.3rem 0;
-      text-decoration: none;
-      color: var(--accent);
-      font-weight: 600;
-      transition: all 0.3s ease;
-    }
+        p {
+            color: var(--text-subtle);
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
 
-    a:hover {
-      color: var(--hover);
-      text-decoration: underline;
-    }
+        a {
+            display: inline-block;
+            margin: 0.3rem 0;
+            text-decoration: none;
+            color: var(--accent);
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
 
-    .readme {
-      background-color: #ffffff0d;
-      border-radius: 10px;
-      padding: 1.5rem;
-      margin-top: 2rem;
-      color: #d0f6f8;
-      font-size: 0.95rem;
-      line-height: 1.6;
-      width: 100%;
-      max-width: 750px;
-    }
+        a:hover {
+            color: var(--hover);
+            text-decoration: underline;
+        }
 
-    footer {
-      margin-top: 3rem;
-      text-align: center;
-      font-size: 1rem;
-      color: #b1f4ff;
-      padding-bottom: 2rem;
-    }
+        .readme {
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 1.6rem;
+            margin-top: 2.5rem;
+            color: #d8f8ff;
+            font-size: 1rem;
+            line-height: 1.8;
+            width: 100%;
+            max-width: 760px;
+        }
 
-    .social-icons img {
-      width: 36px;
-      height: 36px;
-      margin: 0 10px;
-      vertical-align: middle;
-      border-radius: 50%;
-      background-color: #ffffff1a;
-      padding: 6px;
-      transition: transform 0.3s ease;
-    }
+        footer {
+            margin-top: 3rem;
+            text-align: center;
+            font-size: 1rem;
+            color: #9cd6ef;
+            padding-bottom: 2rem;
+        }
 
-    .social-icons img:hover {
-      transform: scale(1.2);
-    }
+        .social-icons img {
+            width: 38px;
+            height: 38px;
+            margin: 0 10px;
+            vertical-align: middle;
+            border-radius: 50%;
+            background-color: #ffffff1a;
+            padding: 6px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
 
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 2rem;
-      }
+        .social-icons img:hover {
+            transform: scale(1.2);
+            box-shadow: 0 0 12px var(--hover);
+        }
 
-      .card {
-        padding: 1.2rem;
-      }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.4rem;
+            }
 
-      h2 {
-        font-size: 1.3rem;
-      }
+            .card {
+                padding: 1.3rem;
+            }
 
-      .social-icons img {
-        width: 32px;
-        height: 32px;
-      }
-    }
-  </style>
+            h2 {
+                font-size: 1.4rem;
+            }
+
+            .social-icons img {
+                width: 32px;
+                height: 32px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-  <h1>🚀 API Practice Projects</h1>
+    <h1>🚀 API Practice Projects</h1>
 
-  <div class="card">
-    <h2>📝 Notes API with JWT Auth</h2>
-    <p>Secure note management system with user login and token-based access.</p>
-    <a href="https://github.com/mananmkgithub/notesapi" target="_blank">🔗 GitHub Repository</a>
-    <a href="https://notesapi-jwt.onrender.com/" target="_blank">🌐 Live on Render</a>
-  </div>
+    <div class="card">
+        <h2>📝 Notes API with JWT Auth</h2>
+        <p>Secure note management system with user login and token-based access.</p>
+        <a href="https://github.com/mananmkgithub/notesapi" target="_blank">🔗 GitHub Repository</a>
+        <a href="https://notesapi-jwt.onrender.com/" target="_blank">🌐 Live on Render</a>
+    </div>
 
-  <div class="card">
-    <h2>🏨 Hotel Management API</h2>
-    <p>Hotel CRUD API with filter and search features using Express & MongoDB.</p>
-    <a href="https://github.com/mananmkgithub/node_hotels" target="_blank">🔗 GitHub Repository</a>
-    <a href="https://node-hotels-et3g.onrender.com/" target="_blank">🌐 Live on Render</a>
-  </div>
+    <div class="card">
+        <h2>🏨 Hotel Management API</h2>
+        <p>Hotel CRUD API with filter and search features using Express & MongoDB.</p>
+        <a href="https://github.com/mananmkgithub/node_hotels" target="_blank">🔗 GitHub Repository</a>
+        <a href="https://node-hotels-et3g.onrender.com/" target="_blank">🌐 Live on Render</a>
+    </div>
+    <!-- 🔗 URL Shortener API -->
+    <div class="card">
+        <h2>🔗 URL Shortener API</h2>
+        <p>Create and manage short URLs with click tracking. Built with Node.js & MongoDB.</p>
+        <a href="https://github.com/mananmkgithub/url-shortner" target="_blank">🔗 GitHub Repository</a>
+        <a href="https://url-shortner-jhwb.onrender.com/" target="_blank">🌐 Live on Render</a>
+    </div>
+    <div class="card">
+        <h2>🧪 API Testing</h2>
+        <p>Use <strong>Postman</strong> to test all APIs and explore authentication, filtering, and CRUD features.</p>
+    </div>
+    <div class="card">
+        <h2>🌍 Hosted on Render</h2>
+        <p> APIs are deployed with <strong>free Render hosting</strong> and accessible publicly.</p>
+    </div>
 
-  <div class="card">
-    <h2>🧪 API Testing</h2>
-    <p>Use <strong>Postman</strong> to test all APIs and explore authentication, filtering, and CRUD features.</p>
-  </div>
-
-  <div class="card">
-    <h2>🌍 Hosted on Render</h2>
-    <p>Both APIs are deployed with <strong>free Render hosting</strong> and accessible publicly.</p>
-  </div>
-
-  <div class="readme">
-    <h2>📄 GitHub README Instructions</h2>
-    <p><strong>Step 1:</strong> Clone the repo</p>
-    <code>git clone https://github.com/mananmkgithub?tab=repositories</code>
-    <p><strong>Step 2:</strong> Install dependencies</p>
-    <code>npm install</code>
-    <p><strong>Step 3:</strong> Add environment variables</p>
-    <code>
+    <div class="readme">
+        <h2>📄 GitHub README Instructions</h2>
+        <p><strong>Step 1:</strong> Clone the repo</p>
+        <code>git clone https://github.com/mananmkgithub?tab=repositories</code>
+        <p><strong>Step 2:</strong> Install dependencies</p>
+        <code>npm install</code>
+        <p><strong>Step 3:</strong> Add environment variables</p>
+        <code>
       PORT=5000<br />
       MONGODB_URI=your_mongo_uri<br />
-      JWT_SECRET=your_jwt_key
+      JWT_SECRET=your_jwt_key(you need jwt)
     </code>
-    <p><strong>Step 4:</strong> Run the app</p>
-    <code>npm run dev</code>
-  </div>
-
-  <footer>
-    <p>Created by <strong>Manan </strong> </p>
-    <div class="social-icons" style="margin-top: 1rem;">
-      <a href="https://github.com/mananmkgithub" target="_blank">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
-      </a>
-      <a href="https://in.linkedin.com/in/manan-kolate-14753b235" target="_blank">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" />
-      </a>
+        <p><strong>Step 4:</strong> Run the app</p>
+        <code>npm start</code>
     </div>
-  </footer>
+
+    <footer>
+        <p>Created by <strong>Manan </strong> </p>
+        <div class="social-icons" style="margin-top: 1rem;">
+            <a href="https://github.com/mananmkgithub" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+            </a>
+            <a href="https://in.linkedin.com/in/manan-kolate-14753b235" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                    alt="LinkedIn" />
+            </a>
+        </div>
+    </footer>
 
 </body>
 
