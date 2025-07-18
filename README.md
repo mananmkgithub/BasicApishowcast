@@ -1,52 +1,86 @@
-# 🚀 API Practice Projects (Created By Manan)
+# 🚀 API Portfolio Showcase – Created by Manan Kolate
 
-This is a responsive portfolio webpage showcasing a series of backend API projects I’ve built using **Node.js**, **Express**, **MongoDB**, and other technologies. It is designed to highlight my hands-on experience with RESTful APIs, deployment, and secure authentication.
+This is a **responsive and modern portfolio web page** showcasing my backend development projects using **Node.js**, **Express**, **MongoDB**, and more. It highlights my real-world API implementations including **authentication, CRUD operations, deployment, and API security**.
 
-## 🧑‍💻 Live Demo
-
-🌐 **Live Website:** [Visit Project Portfolio](https://mananmkgithub.github.io/BasicApishowcast/)  
-📁 **GitHub Repository:** [Mananmkgithub Repos](https://github.com/mananmkgithub?tab=repositories)
+🌐 **Live Website:** [mananmkgithub.github.io/BasicApishowcast](https://mananmkgithub.github.io/BasicApishowcast/)  
+📁 **GitHub Repos:** [github.com/mananmkgithub](https://github.com/mananmkgithub?tab=repositories)
 
 ---
 
-## 📂 Projects Included
-| Project Name               | Tech Stack                                  | Description                                                                                 |
-|---------------------------|---------------------------------------------|---------------------------------------------------------------------------------------------|
-| **Notes API with JWT Auth** | Node.js, Express, MongoDB, Mongoose, JWT     | Secure user login with token-based authentication and CRUD for notes.                       |
-| **Hotel Management API**   | Node.js, Express, MongoDB                   | Full CRUD operations with filtering and search.                                             |
-| **URL Shortener API**      | Node.js, Express, MongoDB              | Shorten long URLs, track clicks, and redirect users.                                        |
-| **Employee CRUD App**      | Node.js, Express, MongoDB, EJS, Bootstrap   | Create, Read, Update, Delete employee records pagination,search...                                              |
-| **API Testing**            | Postman, REST APIs, JSON                    | Test all APIs using headers, tokens, and request bodies through Postman.                   |
-| **Render Hosting**         | Render, Node.js                             | All APIs are deployed publicly for free using the Render platform.                          |
+## 📁 Included Projects
 
-## 📄 Setup Instructions
+### 🔐 Vote Management System – Backend API
+- **Tech Stack:** Node.js, Express, MongoDB, Mongoose, JWT, REST API
+- **Features:**
+  - Secure voter and admin login
+  - Candidate CRUD operations
+  - Role-based access (admin vs. voter)
+  - Vote status check if voted not allow for second time vote
+  - JWT-based authorization for protected routes
+  - Deployed on Render
+- 🔗 [GitHub Repository](https://github.com/mananmkgithub/Online-Vote-Management-System-Backend)
+- 🌐 [Live API (Render)](https://online-vote-management-system-backend.onrender.com/)
 
-Follow these steps to run any of the APIs locally:
+---
 
-### Step 1: Clone the Repository
+### 📝 Notes API with JWT Auth
+- **Tech Stack:** Node.js, Express, MongoDB, JWT
+- Secure login & authentication with note management.
+- 🔗 [GitHub](https://github.com/mananmkgithub/notesapii)
+- 🌐 [Live](https://notesapi-jwt.onrender.com/)
+
+---
+
+### 👨‍💼 Employee CRUD App
+- **Tech Stack:** Node.js, Express, MongoDB, EJS, Bootstrap
+- Manage employees with pagination & search.
+- 🔗 [GitHub](https://github.com/mananmkgithub/emp-simpal-crud-app-)
+- 🌐 [Live](https://crud-app-kafa.onrender.com/)
+
+---
+
+### 🏨 Hotel Management API
+- **Tech Stack:** Node.js, Express, MongoDB
+- Filtered search, sorting, and full CRUD.
+- 🔗 [GitHub](https://github.com/mananmkgithub/node_hotels)
+- 🌐 [Live](https://node-hotels-et3g.onrender.com/)
+
+---
+
+<!-- ### 🔗 URL Shortener API
+- **Tech Stack:** Node.js, Express, MongoDB
+- Shortens long URLs and tracks click statistics.
+- 🔗 [GitHub](https://github.com/mananmkgithub/url-shortener)
+- 🌐 [Live](https://your-url-shortener-link.com) -->
+
+---
+
+### 🧪 API Testing with Postman
+- **Tools:** Postman, REST APIs
+- Tested each endpoint using headers, tokens, JSON bodies.
+
+---
+
+### ☁️ Hosted on Render
+- All backend projects are hosted for **free and publicly accessible** using Render.com.
+
+---
+
+## ⚙️ How to Run Locally
 
 ```bash
-git clone https://github.com/mananmkgithub/your-repo-name
-cd your-repo-name
+# Step 1: Clone the repo
+git clone https://github.com/mananmkgithub/Online-Vote-Management-System-Backend.git
 
-Step 2: Install Dependencies
+
+# Step 2: Install dependencies
 npm install
 
-Step 3: Add Environment Variables
-Create a .env file in the root directory:
+# Step 3: Add environment variables
+# Create a `.env` file and add:
 PORT=5000
 MONGODB_URI=your_mongo_uri
-JWT_SECRET=your_jwt_key
+JWT_SECRET=your_jwt_secret
 
-Step 4: Start the Server
+# Step 4: Start the server
 npm start
-
-📬 Contact
-Feel free to connect with me:
-
-🔗 LinkedIn
-💻 GitHub
-
-
-
-
