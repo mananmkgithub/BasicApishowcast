@@ -14,7 +14,7 @@ This is a responsive portfolio webpage showcasing a series of backend API projec
 |---------------------------|---------------------------------------------|---------------------------------------------------------------------------------------------|
 | **Notes API with JWT Auth** | Node.js, Express, MongoDB, Mongoose, JWT     | Secure user login with token-based authentication and CRUD for notes.                       |
 | **Hotel Management API**   | Node.js, Express, MongoDB                   | Full CRUD operations with filtering and search.                                             |
-| **URL Shortener API**      | Node.js, Express, MongoDB, EJS              | Shorten long URLs, track clicks, and redirect users.                                        |
+| **URL Shortener API**      | Node.js, Express, MongoDB              | Shorten long URLs, track clicks, and redirect users.                                        |
 | **Employee CRUD App**      | Node.js, Express, MongoDB, EJS, Bootstrap   | Create, Read, Update, Delete employee records pagination,search...                                              |
 | **API Testing**            | Postman, REST APIs, JSON                    | Test all APIs using headers, tokens, and request bodies through Postman.                   |
 | **Render Hosting**         | Render, Node.js                             | All APIs are deployed publicly for free using the Render platform.                          |
