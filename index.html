@@ -12,7 +12,7 @@
       --hover: #ffaa55;
       --text-main: #ffffff;
       --text-subtle: #dce3f0;
-      --card-bg: #1c1f2e;
+      --card-bg: rgba(28, 31, 46, 0.88);
     }
 
     * {
@@ -23,13 +23,15 @@
 
     body {
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to right top, #0f2027, #203a43, #2c5364, #3f4e6b);
+      background:black;
+      background-size: cover;
       color: var(--text-main);
       padding: 2rem clamp(1rem, 5vw, 3rem);
       display: flex;
       flex-direction: column;
       align-items: center;
       min-height: 100vh;
+      backdrop-filter: brightness(0.9);
     }
 
     h1 {
@@ -52,7 +54,7 @@
       background-color: var(--card-bg);
       border-radius: 16px;
       padding: 1.6rem;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
@@ -92,35 +94,6 @@
     .card a:hover {
       color: var(--hover);
       text-decoration: underline;
-    }
-
-    .readme {
-      margin-top: 3rem;
-      max-width: 900px;
-      background-color: #0d182a;
-      border-radius: 12px;
-      padding: 2rem;
-      color: #c0e4f8;
-      font-size: 1rem;
-      line-height: 1.8;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
-    }
-
-    .readme a {
-      font-size: large;
-      color: white;
-      display: block;
-      margin-bottom: 1rem;
-    }
-
-    .readme code {
-      display: block;
-      background-color: rgba(255, 255, 255, 0.05);
-      padding: 0.75rem;
-      border-radius: 8px;
-      margin: 0.5rem 0;
-      font-family: monospace;
-      white-space: pre-wrap;
     }
 
     footer {
@@ -163,10 +136,6 @@
         padding: 1.2rem;
       }
 
-      .readme {
-        padding: 1.2rem;
-      }
-
       .footer-creator {
         font-size: 1.2rem;
       }
@@ -179,9 +148,25 @@
 
   <div class="projects">
     <div class="card">
+      <h2>🗳️ Online Vote Management System – Backend</h2>
+      <p>A secure, token-based backend system for online voting with voter & admin roles, age validation, one-time voting, and candidate management.</p>
+      <div class="tech-stack">Node.js, Express, MongoDB, JWT, Bcrypt, REST API</div>
+      <div class="tech-stack">
+        How To Use API Please Check My GitHub README File
+        <a href="https://github.com/mananmkgithub/Online-Vote-Management-System-Backend/blob/main/README.md" target="_blank">🔗 GitHub README File</a>
+      </div>
+      <a href="https://github.com/mananmkgithub/Online-Vote-Management-System-Backend" target="_blank">🔗 GitHub</a>
+      <a href="https://online-vote-management-system-backend.onrender.com" target="_blank">🌐 Live</a>
+    </div>
+
+    <div class="card">
       <h2>📝 Notes API with JWT Auth</h2>
       <p>Secure note management system with user login and token-based access.</p>
       <div class="tech-stack">Node.js, Express, MongoDB, Mongoose, JWT, REST API</div>
+      <div class="tech-stack">
+        How To Use API Please Check My GitHub README File
+        <a href="https://github.com/mananmkgithub/notesapi/blob/main/README.md" target="_blank">🔗 GitHub README File</a>
+      </div>
       <a href="https://github.com/mananmkgithub/notesapi" target="_blank">🔗 GitHub</a>
       <a href="https://notesapi-jwt.onrender.com/" target="_blank">🌐 Live</a>
     </div>
@@ -198,17 +183,13 @@
       <h2>🏨 Hotel Management API</h2>
       <p>Hotel CRUD API with filter and search features using Express & MongoDB.</p>
       <div class="tech-stack">Node.js, Express, MongoDB, REST API</div>
+      <div class="tech-stack">
+        How To Use API Please Check My GitHub README File
+        <a href="https://github.com/mananmkgithub/node_hotels/blob/main/README.md" target="_blank">🔗 GitHub README File</a>
+      </div>
       <a href="https://github.com/mananmkgithub/node_hotels" target="_blank">🔗 GitHub</a>
       <a href="https://node-hotels-et3g.onrender.com/" target="_blank">🌐 Live</a>
     </div>
-
-    <!-- <div class="card">
-      <h2>🔗 URL Shortener API</h2>
-      <p>Create and manage short URLs with click tracking. Built with Node.js & MongoDB.</p>
-      <div class="tech-stack">Node.js, Express, MongoDB, REST API</div>
-      <a href="https://github.com/mananmkgithub/url-shortner" target="_blank">🔗 GitHub</a>
-      <a href="https://url-shortner-jhwb.onrender.com/" target="_blank">🌐 Live</a>
-    </div> -->
 
     <div class="card">
       <h2>🧪 API Testing</h2>
@@ -220,35 +201,35 @@
       <h2>🌍 Hosted on Render</h2>
       <p>All APIs are deployed using free Render hosting and are publicly accessible.</p>
     </div>
-  </div>
 
-  <div class="readme">
-    <h2>📄 GitHub README Instructions</h2>
-    <a href="https://github.com/mananmkgithub?tab=repositories" target="_blank">🔗 My GitHub Repositories</a>
-    <p><strong>Step 1:</strong> Clone the repo</p>
-    <code>git clone https://github.com/your-repo</code>
+    <div class="readme card">
+      <h2>📄 GitHub README Instructions</h2>
+      <a href="https://github.com/mananmkgithub?tab=repositories" target="_blank">🔗 My GitHub Repositories</a>
+      <p><strong>Step 1:</strong> Clone the repo</p>
+      <code>git clone https://github.com/your-repo</code>
 
-    <p><strong>Step 2:</strong> Install dependencies</p>
-    <code>npm install</code>
+      <p><strong>Step 2:</strong> Install dependencies</p>
+      <code>npm install</code>
 
-    <p><strong>Step 3:</strong> Add environment variables</p>
-    <code>
+      <p><strong>Step 3:</strong> Add environment variables</p>
+      <code>
 PORT=5000<br />
 MONGODB_URI=your_mongo_uri<br />
 JWT_SECRET=your_jwt_key
 </code>
 
-    <p><strong>Step 4:</strong> Run the app</p>
-    <code>npm start</code>
+      <p><strong>Step 4:</strong> Run the app</p>
+      <code>npm start</code>
+    </div>
   </div>
 
   <footer>
-    <p>👨‍💻 Created by <span class="footer-creator">Manan</span></p>
+    <p>👨‍💻 Created by <span class="footer-creator">Manan Kolate</span></p>
     <div class="social-icons">
       <a href="https://github.com/mananmkgithub" target="_blank">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
       </a>
-      <a href="https://in.linkedin.com/in/manan-kolate-14753b235" target="_blank">
+      <a href="https://linkedin.com/in/manan-kolate-14753b235" target="_blank">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" />
       </a>
     </div>
